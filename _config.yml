@@ -7,11 +7,10 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Asia/Kolkata
 
-url: "https://itu.github.io"
-baseurl: ""
-
+url: "https://itureal.github.io"
+baseurl: "/Itu.github.io"
 github:
-  username: itu
+  username: ItuReal
 
 social:
   name: Itu
