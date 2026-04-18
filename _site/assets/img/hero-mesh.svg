@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Abstract threat intelligence visual">
+  <rect width="1200" height="400" fill="#151c16"/>
+  <g stroke="#60735f" stroke-opacity="0.35" fill="none">
+    <path d="M0 60h1200M0 120h1200M0 180h1200M0 240h1200M0 300h1200M0 360h1200"/>
+    <path d="M120 0v400M240 0v400M360 0v400M480 0v400M600 0v400M720 0v400M840 0v400M960 0v400M1080 0v400"/>
+  </g>
+  <g fill="none" stroke="#c4a37a" stroke-width="2" stroke-opacity="0.75">
+    <path d="M90 280L260 170L430 210L560 120L750 180L920 105L1100 160"/>
+    <path d="M90 330L240 260L420 290L560 230L710 270L910 240L1100 280" stroke-opacity="0.45"/>
+  </g>
+  <g fill="#9fb489">
+    <circle cx="260" cy="170" r="6"/>
+    <circle cx="560" cy="120" r="6"/>
+    <circle cx="920" cy="105" r="6"/>
+  </g>
+</svg>
+

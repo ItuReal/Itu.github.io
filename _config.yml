@@ -1,0 +1,49 @@
+title: Itu Threat Notes
+tagline: Infra hunting, APT tracking, and attack analysis.
+description: >
+  A practical cyber threat intelligence blog focused on infrastructure hunting,
+  campaign tracking, and playbooks for emerging attacks.
+theme: jekyll-theme-chirpy
+lang: en
+timezone: Asia/Kolkata
+
+url: "https://itu.github.io"
+baseurl: ""
+
+github:
+  username: itu
+
+social:
+  name: Itu
+  email: your-email@example.com
+  links:
+    - https://github.com/itu
+    - https://www.linkedin.com/in/your-profile
+
+avatar: /assets/img/itu-logo.svg
+
+toc: true
+comments:
+  active: false
+
+permalink: /:categories/:title/
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Itu
+      comments: false
+      toc: true
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+

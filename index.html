@@ -1,0 +1,50 @@
+---
+layout: page
+title: Home
+---
+
+<section class="hero-panel">
+  <img class="hero-logo" src="{{ '/assets/img/itu-logo.svg' | relative_url }}" alt="Itu logo">
+  <p class="eyebrow">ITU THREAT NOTES</p>
+  <h1>CTI research built for defenders, not headlines.</h1>
+  <p>
+    Practical writeups covering infrastructure hunting, APT tracking, fresh attack intelligence,
+    and lab-backed detection ideas you can apply quickly.
+  </p>
+</section>
+
+<section class="grid-panels">
+  <a class="info-card" href="{{ '/infra-hunting/' | relative_url }}">
+    <h3>Infra Hunting</h3>
+    <p>Pivot from one artifact to full clusters, ASN patterns, and reusable infrastructure fingerprints.</p>
+  </a>
+  <a class="info-card" href="{{ '/apt-tracking/' | relative_url }}">
+    <h3>APT Tracking</h3>
+    <p>Campaign delta notes, TTP drift, and operator behavior changes across time.</p>
+  </a>
+  <a class="info-card" href="{{ '/recent-attacks/' | relative_url }}">
+    <h3>Recent Attacks</h3>
+    <p>Fast briefs on CVEs, supply chain compromises, crypto theft, and ransomware playbooks.</p>
+  </a>
+  <a class="info-card" href="{{ '/labs/' | relative_url }}">
+    <h3>Labs</h3>
+    <p>Certification and sandbox notes with concrete detection output and tuning lessons.</p>
+  </a>
+</section>
+
+<section class="latest-wrap">
+  <h2>Latest Research</h2>
+  <div class="latest-list">
+    {% assign latest_posts = site.posts | slice: 0, 2 %}
+    {% if latest_posts.size > 0 %}
+      {% for post in latest_posts %}
+        <a class="latest-item" href="{{ post.url | relative_url }}">
+          <span class="latest-title">{{ post.title }}</span>
+          <span class="latest-meta">{{ post.categories | first }}</span>
+        </a>
+      {% endfor %}
+    {% else %}
+      <p class="empty-latest">No posts yet. Publish a post in `_posts` and it appears here automatically.</p>
+    {% endif %}
+  </div>
+</section>
